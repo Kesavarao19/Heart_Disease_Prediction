@@ -44,7 +44,7 @@ if st.button("predict disease"):
     
     try:
 
-        API_URL=os.getenv("API_URL","http://127.0.0.1:8000")
+        API_URL=os.getenv("API_URL","https://heart-disease-prediction-ezp2.onrender.com")
         response=requests.post(f"{API_URL}/predict",json=data)
 
         if response.status_code==200:
