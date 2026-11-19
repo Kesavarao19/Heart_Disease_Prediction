@@ -6,20 +6,20 @@ import os
 
 st.title("Heart Disease Prediction")
 
-Age    =    st.number_input("Age")
+Age    =    st.number_input("Age",step=1)
 Sex    =      st.selectbox('Sex',
              ["M","F"])
 ChestPainType  =st.selectbox("ChestPainType",
             ["ASY","NAP","ATA","TA"])
-RestingBP    = st.number_input("RestingBP")
-Cholesterol  =  st.number_input("Cholesterol")
-FastingBS    =  st.number_input("FastingBS")
+RestingBP    = st.number_input("RestingBP",step=1)
+Cholesterol  =  st.number_input("Cholesterol",step=1)
+FastingBS    =  st.number_input("FastingBS",step=1)
 RestingECG  =   st.selectbox("RestingECG",
                 ["Normal","LVH","ST"])
-MaxHR       =  st.number_input("MaxHR")
+MaxHR       =  st.number_input("MaxHR",step=1)
 ExerciseAngina =st.selectbox("ExerciseAngina",
                             ["N","Y"])
-Oldpeak =st.number_input("Oldpeak")
+Oldpeak =st.number_input("Oldpeak",step=1)
 ST_Slope =st.selectbox("ST_Slope",
                       ["Flat","Up","Down"])
 
